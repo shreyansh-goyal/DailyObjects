@@ -1,0 +1,26 @@
+<div class="container" >
+    <div class="discountLabel">
+        <mat-icon  class="labelIcon">label</mat-icon>
+        <div class="whiteCircle"></div>
+        <span class="offerText">{{itemData.subProducts.offer.text}}</span>
+    </div>
+    <div class="thumbnailDivision"> 
+        <img class="thumbnail" src='{{"https://ik.imagekit.io/dailyobjects"+itemData.subProducts.thumbnail}}' alt="">
+    </div>
+    <p class="name">{{itemData.subProducts.name.slice(13)}}</p>
+    <div class="priceTag">
+      <div class="priceLabel">
+        <span style="color:hotpink;font-weight:800;font-size:20px;">
+            {{itemData.subProducts.sellingPrice}}
+        </span>
+        <span>
+            {{itemData.subProducts.mrp}}
+          <hr class="seperator">
+        </span>
+      </div>
+    <div style="display:flex;">
+        <img style="width:25px;height:25px;" src="https://cdn0.iconfinder.com/data/icons/marketing-icons-2/64/Launch-512.png" alt="">
+        <span style="padding-top: 5px;">{{itemData.subProducts.limitedStock.slice(1)}}</span>
+    </div>
+    </div>
+</div>
